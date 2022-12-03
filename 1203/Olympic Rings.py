@@ -6,6 +6,7 @@ turtle.setup(1280, 720)
 
 def main():
     turtle.speed(6)
+    turtle.shape("turtle")
     turtle.colormode(255)
     turtle.width(6)
     turtle.showturtle()
@@ -34,6 +35,7 @@ def main():
     turtle.pendown()
     turtle.color(0, 128, 64)
     turtle.circle(50, 360, 32)
+    turtle.hideturtle()
     sleep(12)
 
 
