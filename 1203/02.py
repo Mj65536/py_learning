@@ -13,9 +13,9 @@ def nb():
 
 def main():
     t = turtle.Pen()
-    for x in range(100):
+    for x in range(1, 300, 3):
         t.forward(x)
-        t.left(72)
+        t.left(-78)
         nb()
 
 
