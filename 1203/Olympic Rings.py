@@ -1,5 +1,4 @@
 import turtle
-from time import sleep
 
 turtle.setup(1280, 720)
 
@@ -36,7 +35,7 @@ def main():
     turtle.color(0, 128, 64)
     turtle.circle(50, 360, 32)
     turtle.hideturtle()
-    sleep(12)
+    turtle.done()
 
 
 if __name__ == '__main__':
