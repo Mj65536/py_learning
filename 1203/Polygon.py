@@ -8,7 +8,7 @@ def main():
     turtle.penup()
     turtle.forward(-800)
     turtle.pendown()
-    for i in range(5, 16):
+    for i in range(6, 16):
         turtle.circle(60, -360, steps=i)
         turtle.penup()
         turtle.forward(150)
