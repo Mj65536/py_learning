@@ -3,7 +3,7 @@ def main():
     for a in range(1, 61):
         print(a)
         print(bin(a))
-        print(oct(a)
+        print(oct(a))
         print(hex(a))
         print("")
     a += 2
