@@ -1,6 +1,6 @@
 def main():
     print(" def ".strip(""))
-    # strip("")!=strip(" ")
+    # PyCharm里strip("")不会去掉两头空格
     print(" def ".strip(" "))
 
 
