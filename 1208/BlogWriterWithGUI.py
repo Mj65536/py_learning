@@ -22,7 +22,10 @@ def hexo_n(title):
 def hexo_s():
     server = "hexo s"
     webbrowser.open_new_tab("http://localhost:4000")
-    os.system(server)
+    try:
+        os.system(server)
+    except KeyboardInterrupt:
+        print("See you again!")
 
 
 def hexo_c():
@@ -44,10 +47,17 @@ def show():
     try:
         opt = int(opt)
     except TypeError:
-        print("输入类型有误")
+        print("输入类型有误，请重新输入")
+        show()
+    except ValueError:
+        print("输入类型有误，请重新输入")
+        show()
+    except KeyboardInterrupt:
+        print("See you again!")
 
     if opt not in range(1, 7):
-        print('输入有误')
+        print('输入类型有误，请重新输入')
+        show()
     else:
         if opt == 1:
             post_title = input("请输入文章标题: ")
@@ -68,10 +78,9 @@ def show():
         elif opt == 5:
             hexo_c()
             show()
-
         elif opt == 6:
             print('Goodbye')
-
+            exit()
         else:
             print('输入有误')
 
