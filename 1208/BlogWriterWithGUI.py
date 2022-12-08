@@ -37,15 +37,14 @@ def show():
     os.chdir('D:\\blog')
     menu = """
     ------------------------------------------------------------------------------------
-    - 1.新建文章     - 2.预览      - 3.渲染      - 4.部署      - 5.清理缓存      - 6.退出    
+    - 1.新建文章     - 2.预览      - 3.渲染      - 4.部署      - 5.清理缓存      - 0.退出    
     ------------------------------------------------------------------------------------
 """
 
     print(menu)
-
-    opt = input("请输入要执行的操作: ")
+    opt = 0
     try:
-        opt = int(opt)
+        opt = int(input("请输入要执行的操作: "))
     except TypeError:
         print("输入类型有误，请重新输入")
         show()
@@ -53,10 +52,12 @@ def show():
         print("输入类型有误，请重新输入")
         show()
     except KeyboardInterrupt:
-        print("See you again!")
+        print("")
+    except EOFError:
+        print("")
 
-    if opt not in range(1, 7):
-        print('输入类型有误，请重新输入')
+    if opt not in range(0, 6):
+        print('输入数字有误，请重新输入')
         show()
     else:
         if opt == 1:
@@ -78,7 +79,7 @@ def show():
         elif opt == 5:
             hexo_c()
             show()
-        elif opt == 6:
+        elif opt == 0:
             print('Goodbye')
             exit()
         else:
