@@ -43,7 +43,7 @@ def show():
     opt = input("请输入要执行的操作: ")
     try:
         opt = int(opt)
-    except:
+    except IOError:
         print("输入类型有误")
 
     if opt not in range(1, 7):

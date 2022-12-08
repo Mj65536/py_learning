@@ -1,6 +1,6 @@
 def main():
     a = (x*2 for x in range(1, 10))
-    print(a.__next__())
+    # print(a.__next__())
     # p = {'name': 'Pepe', 'age': '6', 'job': 'programmer'}
 
     # p['age'] = '8'
