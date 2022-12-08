@@ -13,7 +13,7 @@ def hexo_d():
 
 
 def hexo_n(title):
-    new = "hexo n" + f" {title}"
+    new = f"hexo n \"{title}\""
     os.system(new)
     cmd = "start C:\\Progra~1\\Typora\\Typora.exe"
     os.system(cmd)
