@@ -46,7 +46,8 @@ def create_backup():
 
 def rollback_new():
     if not os.path.exists(pd.get("p1")):
-        print('未发现存档文件夹，继续还原备份')
+        print('未发现存档文件夹，已自动创建')
+        os.mkdir(pd.get("p1"))
     else:
         cmd = 'RMDIR ' + pd.get("p1") + ' /S'
         os.system(cmd)
@@ -56,7 +57,8 @@ def rollback_new():
 
 def rollback_old():
     if not os.path.exists(pd.get("p1")):
-        print('未发现存档文件夹，继续还原备份')
+        print('未发现存档文件夹，已自动创建')
+        os.mkdir(pd.get("p1"))
     else:
         cmd = 'RMDIR ' + pd.get("p1") + ' /S'
         os.system(cmd)
