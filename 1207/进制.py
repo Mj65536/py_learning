@@ -1,5 +1,6 @@
 def main():
     a = 1
+
     for a in range(1, 61):
         print(a)
         print(bin(a))
