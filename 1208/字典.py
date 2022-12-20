@@ -1,5 +1,5 @@
 def main():
-    a = (x*2 for x in range(1, 10))
+    # a = (x*2 for x in range(1, 10))
     # print(a.__next__())
     # p = {'name': 'Pepe', 'age': '6', 'job': 'programmer'}
 
@@ -32,15 +32,15 @@ def main():
     # [a, b, c] = [1, 2, 3]
     # print(a, b, c)
 
-    # c1 = {'name': '小明一号', 'age': '12', 'job': '吃'}
-    # c2 = {'name': '小明二号', 'age': '13', 'job': '喝'}
-    # c3 = {'name': '小明三号', 'age': '14', 'job': '拉'}
-    # c4 = {'name': '小明四号', 'age': '15', 'job': '睡'}
-    # c5 = {'name': '小明五号', 'age': '16', 'job': '玩'}
-    # t = [c1, c2, c3, c4, c5]
-    # # print(t[0].get('name'))
-    # for i in range(len(t)):
-    #     print(t[i].get('name'), t[i].get('age'), t[i].get('job'))
+    c1 = {'name': '小明一号', 'age': '12', 'job': '吃'}
+    c2 = {'name': '小明二号', 'age': '13', 'job': '喝'}
+    c3 = {'name': '小明三号', 'age': '14', 'job': '拉'}
+    c4 = {'name': '小明四号', 'age': '15', 'job': '睡'}
+    c5 = {'name': '小明五号', 'age': '16', 'job': '玩'}
+    t = [c1, c2, c3, c4, c5]
+    # print(t[0].get('name'))
+    for i in range(len(t)):
+        print(t[i].get('name'), t[i].get('age'), t[i].get('job'))
 
 
 if __name__ == '__main__':
